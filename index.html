@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Alan Judith Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="avatar">
+          <img src="Alan Judith.jpg" alt="profile"/>
+        </div>
+
+        <h2>Alan Judith</h2>
+        <div class="role">Web developer</div>
+        <hr/>
+
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="icon-box"><i class="fas fa-envelope"></i></div>
+            <div class="info">
+              <span class="label">EMAIL</span> <br
+              <span class="text">alanjudith18@gmail.com</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="icon-box"><i class="fas fa-phone"></i></div>
+            <div class="info">
+              <span class="label">PHONE</span> <br
+              <span class="text">+91 8925626185</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="icon-box"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="info">
+              <span class="label">LOCATION</span> <br
+              <span class="text">Kolathur, Chennai</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/alan-judith-a37875248/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/alanjudith" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://doi.org/10.1109/DABCon63472.2024.10919292" target="_blank" title="IEEE Paper"><i class="fas fa-file-alt"></i></a>
+          <a href="https://www.cloudskillsboost.google/public_profiles/47cb7ef9-5e5c-436a-b8f0-1ec5fa932060" target="_blank" title="Cloud"><i class="fas fa-cloud"></i></a>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main">
+        <button id="menuToggle" class="menu-btn">☰</button>
+        <nav class="navbar" id="navbar">
+          <a class="active" href="#">About</a>
+          <a href="education.html">Education</a>
+          <a href="experience.html">Experience</a>
+          <a href="projects.html">Projects</a>
+          <a href="skills.html">Skills</a>
+        </nav>
+
+        <section class="about">
+          <h1>About Me</h1>
+          <p> 
+            I'm a recent graduate in Computer Science and Engineering from Chennai, India, with a strong interest 
+            in website development, front-end technologies, and Python. I'm passionate about creating responsive, 
+            user-friendly, and visually engaging digital experiences.
+          </p>
+
+          <p>
+            While I'm at the early stage of my professional journey, I’ve worked on academic and personal projects 
+            that reflect my ability to turn ideas into functional and intuitive solutions. I enjoy problem-solving, 
+            learning new technologies, and building digital experiences that are meaningful and impactful.          
+          </p>
+
+          <p>
+            I'm eager to apply my knowledge, contribute to real-world projects, and continue growing through 
+            hands-on experience and continuous learning.
+          </p>
+        </section>
+
+        <section class="services">
+          <h2>What I'm Interested</h2>
+
+          <div class="cards">
+            <div class="card">
+              <h3>💻 Web Developer</h3>
+              <p>Modern and high-performance websites built with precision and scalability in mind.</p>
+            </div>
+
+            <div class="card">
+              <h3>🖌️ Web Designer</h3>
+              <p>Clean, creative, and user-centered designs crafted at a professional level.</p>
+            </div>
+
+            <div class="card">
+              <h3>📱 WordPress Developer</h3>
+              <p>Custom WordPress development with sleek design and seamless functionality.</p>
+            </div>
+
+            <div class="card">
+              <h3>⚙️ Python Developer</h3>
+              <p>Robust backend logic and smart automation with high-quality Python solutions.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="resume-section">
+          <a href="Alan Judith - Resume.pdf" class="resume-btn view" target="_blank">🔍 View Resume</a>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="footer-content">
+            <p>&copy; 2025 Alan Judith All Rights Reserved.</p>
+            <p>Designed with 💻 by Alan Judith</p>
+          </div>
+        </footer>
+      </main>
+    </div>
+    
+    <script>
+      document.getElementById("menuToggle").addEventListener("click", function ()
+      {
+        const nav = document.getElementById("navbar");
+        nav.classList.toggle("show");
+      });
+    </script>
+  </body>
+</html>

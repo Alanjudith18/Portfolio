@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Alan Judith Portfolio</title>
+    <meta name="description" content="Alan Judith - Web Developer Portfolio with experience, contact, and projects.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="avatar">
+          <img src="Alan Judith.jpg" alt="profile"/>
+        </div>
+
+        <h2>Alan Judith</h2>
+        <div class="role">Web developer</div>
+        <hr />
+
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="icon-box"><i class="fas fa-envelope"></i></div>
+            <div class="info">
+              <span class="label">EMAIL</span> <br
+              <span class="text">alanjudith18@gmail.com</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="icon-box"><i class="fas fa-phone"></i></div>
+            <div class="info">
+              <span class="label">PHONE</span> <br
+              <span class="text">+91 8925626185</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="icon-box"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="info">
+              <span class="label">LOCATION</span> <br
+              <span class="text">Kolathur, Chennai</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/alan-judith-a37875248/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/alanjudith" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://doi.org/10.1109/DABCon63472.2024.10919292" target="_blank" title="IEEE Paper"><i class="fas fa-file-alt"></i></a>
+          <a href="https://www.cloudskillsboost.google/public_profiles/47cb7ef9-5e5c-436a-b8f0-1ec5fa932060" target="_blank" title="Cloud"><i class="fas fa-cloud"></i></a>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main">
+        <button id="menuToggle" class="menu-btn">☰</button>
+        <nav class="navbar" id="navbar">
+          <a href="index.html">About</a>
+          <a href="education.html">Education</a>
+          <a href="experience.html">Experience</a>
+          <a class="active" href="projects.html">Projects</a>
+          <a href="skills.html">Skills</a>
+        </nav>
+
+        <section id="projects">
+          <h2>Projects</h2>
+
+          <div class="project-item">
+            <h3><span class="project-title">Resume</span></h3>
+            <p class="tools">Tools: HTML, CSS</p>
+            <ul>
+              <li><strong>Designed</strong> a responsive and clean UI for a local catering business.</li>
+              <li><strong>Implemented</strong> user-friendly navigation and visual layout using Elementor in WordPress.</li>
+            </ul>
+          </div>
+
+          <div class="project-item">
+            <h3><span class="project-title">Cyberbullying Detection and Prevention on Social Media</span></h3>
+            <p class="tools">Tools: Python, Machine Learning, Natural Language Processing</p>
+            <ul>
+              <li><strong>Built</strong> a system to detect and classify cyberbullying messages using NLP techniques.</li>
+              <li><strong>Trained</strong> machine learning models on labeled datasets to ensure accurate detection.</li>
+            </ul>
+          </div>
+
+          <div class="project-item">
+            <h3><span class="project-title">Chatbot for LICET Admission Enquiry</span></h3>
+            <p class="tools">Tools: Python, NLP, Tkinter</p>
+            <ul>
+              <li><strong>Developed</strong> a chatbot to handle LICET admission queries with a user-friendly interface.</li>
+              <li><strong>Integrated</strong> real-time FAQ responses to enhance user interaction.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="footer-content">
+            <p>&copy; 2025 Alan Judith All Rights Reserved.</p>
+            <p>Designed with 💻 by Alan Judith</p>
+          </div>
+        </footer>
+      </main>
+    </div>
+
+    <!-- SCRIPT -->
+    <script>
+      function revealOnScroll() {
+        const items = document.querySelectorAll('.edu-item');
+        items.forEach(item => {
+          const rect = item.getBoundingClientRect();
+          if (rect.top < window.innerHeight - 100) {
+            item.classList.add('visible');
+          }
+        });
+      }
+
+      window.addEventListener('load', revealOnScroll);
+      window.addEventListener('scroll', revealOnScroll);
+
+      document.getElementById("menuToggle").addEventListener("click", function () {
+        const nav = document.getElementById("navbar");
+        nav.classList.toggle("show");
+      });
+    </script>
+  </body>
+</html>

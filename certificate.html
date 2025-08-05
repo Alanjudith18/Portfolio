@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Alan Judith Portfolio</title>
+    <meta name="description" content="Alan Judith - Web Developer Portfolio with experience, contact, and skills.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="avatar">
+          <img src="Alan Judith.jpg" alt="profile"/>
+        </div>
+
+        <h2>Alan Judith</h2>
+        <div class="role">Web developer</div>
+        <hr />
+
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="icon-box"><i class="fas fa-envelope"></i></div>
+            <div class="info">
+              <span class="label">EMAIL</span> <br
+              <span class="text">alanjudith18@gmail.com</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="icon-box"><i class="fas fa-phone"></i></div>
+            <div class="info">
+              <span class="label">PHONE</span> <br
+              <span class="text">+91 8925626185</span>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="icon-box"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="info">
+              <span class="label">LOCATION</span> <br
+              <span class="text">Kolathur, Chennai</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/alan-judith-a37875248/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/alanjudith" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://doi.org/10.1109/DABCon63472.2024.10919292" target="_blank" title="IEEE Paper"><i class="fas fa-file-alt"></i></a>
+          <a href="https://www.cloudskillsboost.google/public_profiles/47cb7ef9-5e5c-436a-b8f0-1ec5fa932060" target="_blank" title="Cloud"><i class="fas fa-cloud"></i></a>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main">
+        <button id="menuToggle" class="menu-btn">☰</button>
+        <nav class="navbar" id="navbar">
+          <a href="index.html">About</a>
+          <a href="education.html">Education</a>
+          <a href="experience.html">Experience</a>
+          <a href="projects.html">Projects</a>
+          <a class="active" href="skills.html">Skills</a>
+        </nav>
+        
+        <section id="certificates">
+          <h2>Certificates</h2>
+          <div class="certificate-grid">
+            <img src="HTML & CSS.png" alt="HTML & CSS Certificate">
+            <img src="JavaScript.png" alt="JavaScript Certificate">
+            <img src="Python IDLE.png" alt="Python Certificate">
+            <img src="UI UX Designer.png" alt="UI/UX Certificate">
+            <img src="Data Analysis.png" alt="Google Cloud Certificate">
+            <img src="Figma.jpg" alt="Figma Certificate">
+            <img src="Web Development Virtual Internship.png" alt="Web Development Virtual Internship Certificate">
+            <img src="Web Development Internship.jpg" alt="Web Development Internship Certificate">
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="footer-content">
+            <p>&copy; 2025 Alan Judith All Rights Reserved.</p>
+            <p>Designed with 💻 by Alan Judith</p>
+          </div>
+        </footer>
+      </main>
+    </div>
+
+    <!-- SCRIPT -->
+    <script>
+      function revealOnScroll() {
+        const items = document.querySelectorAll('.edu-item');
+        items.forEach(item => {
+          const rect = item.getBoundingClientRect();
+          if (rect.top < window.innerHeight - 100) {
+            item.classList.add('visible');
+          }
+        });
+      }
+
+      window.addEventListener('load', revealOnScroll);
+      window.addEventListener('scroll', revealOnScroll);
+
+      document.getElementById("menuToggle").addEventListener("click", function () {
+        const nav = document.getElementById("navbar");
+        nav.classList.toggle("show");
+      });
+    </script>
+  </body>
+</html>
